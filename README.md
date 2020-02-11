@@ -9,14 +9,18 @@ React JS Fundamentals Course (2019 Update)
 2. JSX 는 Javascript 와 HTML 을 결합한 형식이다.
 3. JSX 는 Component 에 정보를 보낼 수 있다. 
 4. React Application 은 한번에 하나의 Component 만 Rendering 할 수 있다. 
-    <pre><code> # index.js
-    ReactDOM.render(<App />, document.getElementById('root'));</code></pre>
+   ```
+   # index.js
+   ReactDOM.render(<App />, document.getElementById('root'));
+   ```
 
 
 #### 2020.01.30
 1. react 기본 구성은 다음과 같다. 
-   <pre><code># App.js
-   class App extends React.Component {...}</code></pre>
+   ```
+   # App.js
+   class App extends React.Component {...}
+   ```
 2. render() 은 화면을 그릴 때 사용한다. 
 3. State 는 동적인 데이터를 다룰 때 사용한다. 
 4. setState 를 호출할 때 마다 react 는 새로운 state 와 함께 redner function 을 호출한다. 
@@ -35,6 +39,31 @@ React JS Fundamentals Course (2019 Update)
       5. **componentDidUpdate()**
    3. Unmounting : component 가 DOM에서 제거될 때 호출된다. 
       1. **componentWillUnmount()**
+
+
+#### 2020.02.11
+1. Fetch() 를 사용할 수 있지만 Fetch Wrapper 인 axios 를 사용한다. 
+2. 비동기 처리가 필요할 경우 async, await 를 사용한다. 
+   ```
+   getMovies = async () => {
+    const movies = await axios.get("https://yts-proxy.now.shlist_movies.json");
+   }
+   ```
+3. 필요한 결과가 movies.data.data.movies 에 저장된 경우 다음과 같이 저장할 수 있다.
+   ```
+   # ~ ES5 
+   getMovies = async () => {
+    const movies = await axios.get("https://yts-proxy.now.sh/list_movies.json?sort_by=rating"); 
+    this.setState({movies.data.data.movies, isLoading: false});
+   };
+
+   # ES6 ~  
+   getMovies = async () => {
+    const {data : {data : {movies}}} = await axios.get("https://yts-proxy.now.sh/list_movies.json?sort_by=rating");
+    this.setState({movies, isLoading: false});
+   };
+   ```
+
 
 
 [0]:https://academy.nomadcoders.co/courses/category/KR
