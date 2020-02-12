@@ -3,7 +3,9 @@
 
 React JS Fundamentals Course (2019 Update)
 > Lesson : [ReactJS로 웹 서비스 만들기 - (중급) JavaScript, ReactJS][1]
+
 > Periods : 2020.01.29 ~ 02.12 
+
 > Libraries : react, [axios][axios], [gh-pages][gh-pages], [react-router-dom][react-router-dom]
 
 
