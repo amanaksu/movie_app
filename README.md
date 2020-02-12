@@ -3,6 +3,8 @@
 
 React JS Fundamentals Course (2019 Update)
 > Lesson : [ReactJS로 웹 서비스 만들기 - (중급) JavaScript, ReactJS][1]
+> Libraries : react, [axios][axios], [gh-pages][gh-pages], [react-router-dom][react-router-dom]
+
 
 #### 2020.01.29 
 1. Component 는 HTML을 반환하는 함수이다. 
@@ -69,3 +71,6 @@ React JS Fundamentals Course (2019 Update)
 [0]:https://academy.nomadcoders.co/courses/category/KR
 [1]:https://academy.nomadcoders.co/p/reactjs-fundamentals
 [2]:https://ko.reactjs.org/docs/react-component.html#mounting
+[axios]:https://www.npmjs.com/package/axios
+[gh-pages]:https://www.npmjs.com/package/gh-pages
+[react-router-dom]:https://www.npmjs.com/package/react-router-dom
