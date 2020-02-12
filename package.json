@@ -1,6 +1,6 @@
 {
-  "name": "study_reactjs_movie_app",
-  "version": "0.1.0",
+  "name": "movie_app",
+  "version": "1.2.1",
   "private": true,
   "homepage": "http://amanaksu.github.io/movie_app",
   "dependencies": {
